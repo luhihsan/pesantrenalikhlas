@@ -58,12 +58,12 @@
         </div><br><br>
 
         <div class="container mt-4">
-            <div class="row">
+            <div class="row align-items-center">
 
                 <!-- Card 2 -->
-                <div class="col-md-3 d-flex justify-content-center">
+                <div class="col-md">
                     <div class="card">
-                        <img src="../../assets/img/santridipesantren.jpg" class="card-img-top" alt="">
+                        <img src="../../assets/img/santridipesantren.jpg" class="card-img-top" alt="" >
                         <div class="card-body d-flex flex-column gap-3">
                             <div class="brand text-center">
                                 <p class="title mb-0 mt-2"><b>Pendaftaran Calon Pelajar</b></p>
@@ -79,7 +79,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-md-3 d-flex justify-content-center">
+                <div class="col-md">
                     <div class="card">
                         <img src="../../assets/img/bgsantren.jpg" class="card-img-top" alt="">
                         <div class="card-body d-flex flex-column gap-3">
@@ -97,7 +97,7 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="col-md-3 d-flex justify-content-center">
+                <div class="col-md">
                     <div class="card">
                         <img src="../../assets/img/halamandepanpesantren.jpg" class="card-img-top" alt="">
                         <div class="card-body d-flex flex-column gap-3">
