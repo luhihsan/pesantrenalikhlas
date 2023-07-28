@@ -8,7 +8,47 @@
 
         <div class="container text-center py-5 my-5">
         
-            <div id="countdown"></div>
+        <div class="container mt-4">
+            <div class="row align-items-center">
+
+                <!-- Card 2 -->
+                <div class="col-md">
+                    <div class="card">
+                        <img src="../../assets/img/santridipesantren.jpg" class="card-img-top" alt="" >
+                        <div class="card-body d-flex flex-column gap-3">
+                            <div class="brand text-center">
+                                <p class="title mb-0 mt-2"><b>Monitoring Data Pendaftaran Calon Santri</b></p>
+                            </div>
+                            <div class="description text-center" style="color:#909294">
+                               Lakukan Monitoring dan Penerimaan Calon Santri Disini
+                            </div>
+                            <div class="d-block text-center mt-auto"><br>
+                                <a class="btn btn-sm btn-primary px-3" href="?monitoring">Monitoring Data</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md">
+                    <div class="card">
+                        <img src="../../assets/img/bgsantren.jpg" class="card-img-top" alt="">
+                        <div class="card-body d-flex flex-column gap-3">
+                            <div class="brand text-center">
+                                <p class="title mb-0 mt-2"><b>Bantuan</b></p>
+                            </div>
+                            <div class="description text-center" style="color:#909294">
+                                Jawab Semua Pertanyaan dan Keluhan Pendaftar Disini
+                            </div>
+                            <div class="d-block text-center mt-auto"><br>
+                                <a class="btn btn-sm btn-primary px-3" href="?pengaturan">Lihat Pertanyaan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
             
         </div>
 

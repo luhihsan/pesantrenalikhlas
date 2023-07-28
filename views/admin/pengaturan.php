@@ -1,6 +1,6 @@
         <div class="container text-center mt-3">
             <br>
-        <h4 class="mt-3">Keluhan Pendaftar</h4>
+        <h4 class="mt-3">Portal Jawab Bantuan Pendaftar</h4>
         <div class="table-responsive">
             <table class="table mt-4">
                 <thead class="table-primary">

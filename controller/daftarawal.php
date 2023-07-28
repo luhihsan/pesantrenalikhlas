@@ -18,8 +18,8 @@
     $program = $_POST['program'];
 
     // Masukkan data ke database (tabel pendaftarawal)
-    $querypendaftarawal = mysqli_query($connect, "INSERT INTO pendaftaranawal (no_pendfawal, id, nama, tgllhr, nisn, asal_sekolah, alamat, tempat_lahir, nama_ayah, nama_ibu, nohp, program, status) 
-                                                VALUES ('$no_pendfawal', '$id', '$nama', '$tgllhr', '$nisn', '$asal_sekolah', '$alamat', '$tempat_lahir', '$nama_ayah', '$nama_ibu', '$nohp', '$program', '1')");
+    $querypendaftarawal = mysqli_query($connect, "INSERT INTO pendaftaranawal (no_pendfawal, id, nama, tgllhr, nisn, asal_sekolah, alamat, tempat_lahir, nama_ayah, nama_ibu, nohp, program, status, id_user) 
+                                                VALUES ('$no_pendfawal', '$id', '$nama', '$tgllhr', '$nisn', '$asal_sekolah', '$alamat', '$tempat_lahir', '$nama_ayah', '$nama_ibu', '$nohp', '$program', '0', '$id')");
 
     if ($querypendaftarawal) {
         // Redirect ke halaman yang diinginkan setelah pendaftaran berhasil

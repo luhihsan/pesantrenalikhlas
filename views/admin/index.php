@@ -94,7 +94,7 @@
                         <a class="nav-link" href="?monitoring">Monitoring</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?pengaturan">Keluhan</a>
+                        <a class="nav-link" href="?pengaturan">Bantuan</a>
                     </li>
                 </ul>
             </div>
