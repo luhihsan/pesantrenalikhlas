@@ -1,12 +1,11 @@
 <?php
 
 include "connect.php";
-
+$no_pendfawal = $_GET['no_pendfawal'];
 if (isset($_GET['yes'])) {
 
-    $no_pendf = $_GET['no_pendf'];
 
-    $query = mysqli_query($connect, "UPDATE pendaftar SET status='1' WHERE no_pendf='$no_pendf'");
+    $query = mysqli_query($connect, "UPDATE pendaftaranawal SET status='1' WHERE no_pendfawal='$no_pendfawal'");
 
     if ($query) {
         echo "<script>alert('Berhasil!'); document.location.href = '../views/admin/?monitoring';</script>";
@@ -14,25 +13,28 @@ if (isset($_GET['yes'])) {
         echo "<script>alert('Gagal!'); document.location.href = '../views/admin/?monitoring';</script>";
     }
 
-} else {
+} elseif (isset($_GET['no'])){
 
-    $no_pendf = $_GET['no_pendf'];
-    $idberkas = $_GET['idberkas'];
-    $idnilai = $_GET['idnilai'];
 
-    $query = mysqli_query($connect, "SELECT * FROM pendaftar WHERE no_pendf='$no_pendf'");
+    $querytolak = mysqli_query($connect, "UPDATE pendaftaranawal SET status='2' WHERE no_pendfawal='$no_pendfawal'");
+    if ($querytolak) {
+        echo "<script>alert('Berhasil!'); document.location.href = '../views/admin/?monitoring';</script>";
+    } else {
+        echo "<script>alert('Gagal!'); document.location.href = '../views/admin/?monitoring';</script>";
+    }
+
+    $query = mysqli_query($connect, "SELECT * FROM pendaftaranawal WHERE no_pendfawal='$no_pendfawal'");
     $data = mysqli_fetch_array($query);
     $id = $data['id'];
     $nama = $data['nama'];
 
     $queryblacklist = mysqli_query($connect, "INSERT INTO blacklist VALUE('$id', '$nama')");
 
-    $querypendaftar = mysqli_query($connect, "DELETE FROM pendaftar WHERE no_pendf='$no_pendf'");
-    $queryberkas = mysqli_query($connect, "DELETE FROM berkas WHERE id_berkas='$idberkas'");
-    $querynilai = mysqli_query($connect, "DELETE FROM nilai_un WHERE id_nilai='$idnilai'");
+    // $querypendaftarawal = mysqli_query($connect, "DELETE FROM pendaftaranawal WHERE no_pendfawal='$no_pendfawal'");
 
-    if ($querypendaftar && $queryblacklist && $queryberkas && $querynilai) {
-        echo "<script>alert('Berhasil!'); document.location.href = '../views/admin/?monitoring';</script>";
+
+    if ($querypendaftarawal) {
+         echo "<script>alert('Berhasil!'); document.location.href = '../views/admin/?monitoring';</script>";
     } else {
         echo "<script>alert('Gagal!'); document.location.href = '../views/admin/?monitoring';</script>";
     }

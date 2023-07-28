@@ -48,16 +48,18 @@
                         <td>
                             <!-- Tambahkan tombol aksi di sini -->
                             <!-- Misalnya, tombol edit dan hapus -->
-                            <a href="edit_pendaftaranawal.php?no_pendfawal=<?= $data['no_pendfawal']; ?>" class="btn btn-primary">Edit</a>
-                            <a href="../../controller/hapus_pendaftaranawal.php?no_pendfawal=<?= $data['no_pendfawal']; ?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</a>
                             <?php
                             if ($data['status'] == 0) {
-                                echo "<a href='generate_pdf.php?no_pendf=$data[no_pendf]' target='_blank' class='btn btn-info'>Cetak PDF</a>";
-                                echo "<a href='../../controller/konfirmasi.php?yes&no_pendf=$data[no_pendf]' class='btn btn-warning'>Terima</a>
-                                    <a href='../../controller/konfirmasi.php?no&no_pendf=$data[no_pendf]&idberkas=$data[id_berkas]&idnilai=$data[id_nilai]' class='btn btn-danger'>Tolak</a>";
-                            } else {
+                                echo "<a href='generate_pdf.php?no_pendf=$data[no_pendfawal]' target='_blank' class='btn btn-info'>Cetak PDF</a>";
+                                echo "<a href='../../controller/konfirmasi.php?yes&no_pendfawal=$data[no_pendfawal]' class='btn btn-warning'>Terima</a>
+                                    <a href='../../controller/konfirmasi.php?no&no_pendfawal=$data[no_pendfawal]' class='btn btn-danger'>Tolak</a>";
+                            } else if  ($data['status'] == 2)  {
+                                echo "<span class='badge badge-danger'>Ditolak</span>";
+                            } else{
                                 echo "<span class='badge badge-success'>Diterima</span>";
                             }
+
+                            
                             ?>
                         </td>
                     </tr>
