@@ -120,24 +120,25 @@
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-lg-10 col-xl-8">
           <div class="card" style="border-radius: 10px;">
-          
-            <form class="card-body p-4" action="controller.php" method="post">
+            <form class="card-body p-4" action="../../controller/controller_bantuan.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Judul</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Isi Judul Bantuan">
+                    <label for="judul">Judul</label>
+                    <input type="text" class="form-control" id="judul" name="judul" placeholder="Isi Judul Bantuan">
                 </div>
                 <div class="form-group mt-3">
-                    <label for="exampleFormControlTextarea1">Isi</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="isi">Isi</label>
+                    <textarea class="form-control" id="isi" name="isi" rows="3"></textarea>
                 </div>
 
-                <label for="exampleFormControlInput1">Lampiran</label>
+                <label for="customFile">Lampiran</label>
                 <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
+                    <input type="file" name="image" id = "image" accept=".jpg, .jpeg, .png">
+                    
                 </div>
 
-                <button  class="btn btn-primary mt-3 " style="color:white;width: 90px; ">Submit</button>
+
+
+            <button type="submit" class="btn btn-primary mt-3" style="width: 90px;">Submit</button>
                 
                 
             </form>
@@ -145,6 +146,8 @@
             </div>
             </div>
             </div>
+            
+            
     
     </main>
     <!-- END CONTENT -->
