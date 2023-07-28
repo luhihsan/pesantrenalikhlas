@@ -14,8 +14,8 @@
 
         <hr>
 
-        <div class="text-center md-10">
-  <div class="probootstrap-text probootstrap-animate">
+        <div class="row d-flex justify-content-center align-items-center h-100 text-center">
+  <div class="probootstrap-text probootstrap-animate col-lg-10 ">
               <h3>Tentang Pondok Pesantren</h3>
               <p>Pondok Pesantren Al-Ikhlas Jogja merupakan lembaga pendidikan Islam yang bertujuan untuk memberikan pendidikan dan pembinaan kepada para santri dalam hal pengetahuan agama, akhlak, serta keterampilan hidup. Dengan mengutamakan nilai-nilai keagamaan, pesantren ini berkomitmen untuk mencetak generasi muda yang berkualitas, berakhlak mulia, dan memiliki wawasan lingkungan.
 

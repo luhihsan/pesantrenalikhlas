@@ -108,7 +108,7 @@
                             Butuh bantuan? hubungi kami di sini
                             </div>
                             <div class="d-block text-center mt-auto"><br>
-                                <a class="btn btn-sm btn-primary px-3" href="site/login">Selengkapnya</a>
+                                <a class="btn btn-sm btn-primary px-3" href="bantuan.php">Selengkapnya</a>
                             </div>
                         </div>
                     </div>

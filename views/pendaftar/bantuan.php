@@ -93,7 +93,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link " href="?beranda">Beranda</a>
+                        <a class="nav-link " href="index.php">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../pendaftar/tutorial.php">Tutorial</a>
@@ -116,68 +116,36 @@
 
     <!-- START CONTENT -->
     <main role="main" style="min-height:400px">
-        <?php
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-10 col-xl-8">
+          <div class="card" style="border-radius: 10px;">
+          
+            <form class="card-body p-4" action="controller.php" method="post">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Judul</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Isi Judul Bantuan">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="exampleFormControlTextarea1">Isi</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
 
-if (isset($_GET['beranda'])) {
-    include "beranda.php";
-} elseif (isset($_GET['pendaftaran'])) {
-    // Logika atau aksi untuk halaman "Pendaftaran"
-    $id = $_SESSION['id'];
-    $nama = $_SESSION['nama'];
-    $cekblacklist = mysqli_query($connect, "SELECT * FROM blacklist WHERE id_user='$id' AND nama='$nama'");
-    $data = mysqli_fetch_array($cekblacklist);
-    $cekstatus = mysqli_query($connect, "SELECT * FROM pendaftar WHERE id='$id'");
-    $data2 = mysqli_fetch_array($cekstatus);
-    $cekid = mysqli_query($connect, "SELECT * FROM user WHERE id='$id'");
-    $data3 = mysqli_fetch_array($cekid);
+                <label for="exampleFormControlInput1">Lampiran</label>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
 
-    if ($data && $data > 0) {
-        include "blacklist.php";
-    } elseif ($data2 && $data2['status'] == '1') {
-        include "sudahdaftar.php";
-    } elseif ($data2 && $data2['status'] == '0') {
-        include "menunggu.php";
-    } else {
-        include "pendaftaran.php";
-    }
-} elseif (isset($_GET['pendaftaranawal'])) {
-    $id = $_SESSION['id'];
-    $cekstatus = mysqli_query($connect, "SELECT * FROM pendaftaranawal WHERE id='$id'");
-    $data2awal = mysqli_fetch_array($cekstatus);
-
-    if ($data2awal && $data2awal['status'] == '1') {
-        include "sudahdaftar.php";
-    }else {
-        include "pendaftaranawal.php";
-    }
-} elseif (isset($_GET['daftarsiswa'])) {
-    // Logika atau aksi untuk halaman "Pemeringkatan"
-    $id = $_SESSION['id'];
-    $cekstatus = mysqli_query($connect, "SELECT * FROM pendaftar WHERE id='$id'");
-    $data = mysqli_fetch_array($cekstatus);
-    if ($data < 1) {
-        include "belumdaftar.php";
-    } elseif ($data['status'] == '0') {
-        include "menunggu.php";
-    } elseif ($data['status'] == '1') {
-        include "daftarsiswa.php";
-    }
-} elseif (isset($_GET['profil'])) {
-    $id = $_SESSION['id'];
-    $cekstatus = mysqli_query($connect, "SELECT * FROM pendaftar WHERE id='$id'");
-    $data3awal = mysqli_fetch_array($cekstatus);
+                <button  class="btn btn-primary mt-3 " style="color:white;width: 90px; ">Submit</button>
+                
+                
+            </form>
+        </div>
+            </div>
+            </div>
+            </div>
     
-    if ($data3awal && isset($data3awal['status']) && $data3awal['status'] == '1') {
-        include "profile.php";
-    } else {
-        include "notsetprofile.php";
-    }
-} else {
-    // Jika tidak ada parameter yang sesuai, maka muat halaman "Beranda" sebagai halaman default.
-    include "beranda.php";
-}
-
-        ?>
     </main>
     <!-- END CONTENT -->
 

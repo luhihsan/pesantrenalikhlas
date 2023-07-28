@@ -91,10 +91,10 @@
                         <a class="nav-link" href="?beranda">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?monitoring">monitoring</a>
+                        <a class="nav-link" href="?monitoring">Monitoring</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?pengaturan">pengaturan</a>
+                        <a class="nav-link" href="?pengaturan">Keluhan</a>
                     </li>
                 </ul>
             </div>
