@@ -17,7 +17,7 @@
                         $i = 0;
                         $query = mysqli_query($connect, "SELECT * FROM bantuan");
                         $data = mysqli_fetch_array($query);
-                        $jawaban = $data['jawaban'];
+                        $id_bantuan = $data['id_bantuan'];
                         foreach ($query as $data) :
                             $i++;
                     ?>
@@ -27,10 +27,11 @@
                         <td><?= $data['lampiran'] ?></td>
                         <form action="../../controller/submit_jawaban.php" method="POST" >
                         <td>
-                            <input type="text" value="<?php echo $jawaban; ?>" name="jawaban" id="jawaban">
+                            <input type="text" value="<?php echo $data['jawaban']; ?>" name="jawaban" id="jawaban">
+                            <input type="hidden" value="<?php echo $data['id_bantuan']; ?>" name="id_bantuan" id="id_bantuan">
                         </td>
                         <td>
-                            <input type="submit" >
+                            <input type="submit"  value="Submit" >
                            
                         </td>
                         </form>
