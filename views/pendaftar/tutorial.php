@@ -133,41 +133,15 @@
                             <a href="#signup">Buat Akun</a>
                         </li>
                         <li>
-                            <a href="#email-verification">Verifikasi Email</a>
-                        </li>
-                        <li>
                             <a href="#login">Login</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#application">Aplikasi Pendaftaran Calon Pelajar</a>
+                    <a href="#pendaftaran">Pendaftaran Calon Santri</a>
                     <ul class="fw-normal ">
                         <li>
-                            <a href="#addcapel">Tambah Capel</a>
-                        </li>
-                        <li>
-                            <a href="#status">Status Pendaftaran</a>
-                        </li>
-                        <li>
-                            <a href="#forms-validation">Formulir &amp; Verifikasi</a>
-                        </li>
-                        <li>
-                            <a href="#test-zones">Zona Ujian Masuk</a>
-                        </li>
-                        <li>
-                            <a href="#upload-documents">Unggah Berkas Pendaftaran</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#fees-payment">Biaya &amp; Pembayaran</a>
-                    <ul class="fw-normal">
-                        <li>
-                            <a href="#method">Metode Pembayaran</a>
-                        </li>
-                        <li>
-                            <a href="#when-pay">Kapan Pembayaran Dilakukan?</a>
+                            <a href="#langkah">Langkah Pendaftaran</a>
                         </li>
                     </ul>
                 </li>
@@ -186,56 +160,39 @@
                 <a href="#account">Akun</a>
             </h4>
             <p class="ps-4">
-                <mark>Akun</mark> atau <mark>Akun Pendaftar</mark> adalah akun yang digunakan untuk mendaftarkan Calon Pelajar di Website Pendaftaran.            </p>
+                Akun atau Akun Pendaftaradalah akun yang digunakan untuk mendaftarkan Calon Pelajar di Website Pendaftaran.            </p>
             <h5 id="signup">
                 <a href="#signup">Buat Akun</a>
             </h5>
             <p class="ps-5 mb-0">Untuk bisa masuk ke Website Pendaftaran, Pendaftar diharuskan untuk membuat akun di
-                Website Pendaftaran. Terdapat 2 cara untuk membuat akun di Website Pendaftaran:
+                Website Pendaftaran.
             </p>
-
-            <p class="ps-5 my-2"><u>Cara 1</u>: Membuat Akun:</p>
+            <p class="ps-5 my-2">Membuat Akun:</p>
             <div class="create-account ps-5">
-                <span class="pe-2">-</span>
-                <p class="mb-1">Gunakan email aktif: Gmail, Yahoo, Outlook atau lainnya.</p>
-                <span class="pe-2">-</span>
-                <p class="mb-1">Setelah mendaftarkan email, lakukan <span class="text-danger">verifikasi
-                        email</span>. Buka kotak masuk email dan klik pada link verifikasi yang diterima.</p>
-                <span class="pe-2">-</span>
-                <p class="mb-1">Link verifikasi email
-                    hanya dapat di klik satu kali, setelah itu pendaftar akun langsung menuju website pendaftaran
-                    online.</p>
+                <p class="mb-1">Setelah masuk ke halaman awal web. User akan melakukan pendaftaran dengan memilih menu membuat akun disamping "Login"</p>
+                <img src= "../../assets/img/awal_reg.png" class="mb-1">
+                <p class="mb-1">Setelah masuk ke halaman buat akun, user akan diminta mengisikan data yang diperlukan untuk membuat akun.</p>
+                <img src= "../../assets/img/tutor_reg.png" class="mb-1">
+                <p class="mb-1">Setelah mengisikan data yang diperlukan, user dapat klik tombol registrasi.</p>
+                <p class="mb-1">Jika registrasi sukses maka akan muncul notifikasi "Registrasi Sukses" dan secara otomatis akan kembali ke halaman login</p>
             </div>
-            <p class="ps-5 my-2"><u>Atau cara 2</u>: <abbr title="Single Sign On">SSO</abbr> Gmail:</p>
-            <div class="create-account ps-5">
-                <span class="pe-2">-</span>
-                <p class="mb-1">Login menggunakan Gmail dengan mengklik tombol <button class="btn btn-sm btn-outline-danger fs-12">Login with Google</button> yang ada pada bagian
-                    bawah
-                    kanan
-                    form
-                    login.
-                </p>
-            </div>
-
-            <h5 id="email-verification">
-                <a href="#email-verification">Verifikasi Email</a>
-            </h5>
-            <p class="ps-5">Tahap Verifikasi Email dilakukan setelah membuat akun pendaftaran. Pendaftar tidak dapat
-                masuk ke Website Pendaftaran sebelum memverifikasi email.</p>
             <h5 id="login">
                 <a href="#login">Login</a>
             </h5>
-            <p class="ps-5">
-                Masuk ke Website Pendaftaran dengan email dan password yang sudah didaftarkan sebelumnya.            </p>
-            <p class="ps-5">
-                Atau...            </p>
-            <p class="ps-5">
-                Login menggunakan Gmail dengan mengklik tombol  <button class="btn btn-sm btn-outline-danger fs-12">Login with Google</button>  yang ada pada
-                    bagian bawah
-                    kanan form login.            </p>
-            <div class="ps-5">
-                <img src="/img/sso-gmail.png" width="250" alt="">
-            </div>
+            <p class="ps-5">User memasukan data email dan password sesuai dengan yang di registrasikan</p>
+            <img src= "../../assets/img/login.png" class="mb-1">
+            <p class="ps-5">Jika login sukses maka akan muncul notifikasi "Login Sukses" dan user akan secara otomatis masuk ke halaman utama</p>
+
+            <h5 id="pendaftaran">
+                <a href="#Pendaftaran">Pendaftaran Calon Santri</a>
+            </h5>
+            <p class="ps-5">Setelah berhasil login maka user akan berada pada halaman utama pendaftaran. Selanjutnya user akan memilih menu pendaftaran yang ada di sebelah kiri.</p>
+            <img src= "../../assets/img/step1.png" class="mb-1">
+            <p class="ps-5">User akan masuk ke halaman pendaftaran untuk mengisikan data yang diperlukan untuk mendaftar sebagai calon santri.</p>
+            <p class="ps-5">Setelah selesai mengisikan data yang diperlukan, user melakukan pendaftaran dengan klik pada tombol "Daftar" yang ada dibawah halaman pendafataran.</p>
+            <p class="ps-5">notifikasi "Sukses Mendaftar" akan muncul jika pendaftaran berhasil. User dapat kembali ke halaman awal dan menunggu konfirmasi penerimaan dari admin.</p>
+
+
 
             <div class="catatan fs-14 ps-5">
                 <div class="row">
@@ -251,133 +208,6 @@
                     </div>
                 </div>
             </div>
-            <p></p>
-
-            <h4 id="application">
-                <a href="#application">Aplikasi Pendaftaran Calon Pelajar</a>
-            </h4>
-            <p class="ps-4">
-                <mark>Calon Pelajar ( Capel )</mark> ialah mereka yang akan mengikuti Ujian Masuk KMI dan diwajibkan untuk memenuhi seluruh persyaratan yang telah ditentukan.            </p>
-            <h5 id="status">
-                <a href="#status">Status Pendaftaran</a>
-            </h5>
-            <p class="ps-5">
-                Status Pendaftaran atau Status Verifikasi Data adalah status capel selama pendaftaran online.            </p>
-            <div class="forms ps-5">
-                <ol>
-                    <li class="fw-semibold">Input Data</li>
-                    <p class="mb-0">Data sedang dalam tahap input. Data tidak akan terkirim dan diverifikasi oleh
-                        admin sampai
-                        Calon Pelajar atau Wali melengkapi seluruh formulir dan kemudian mengklik tombol Kirim di
-                        halaman review formulir.
-                    </p>
-
-                    <li class="fw-semibold">Pemeriksaan</li>
-                    <p class="mb-0"> Data Calon Pelajar berhasil terkirim ke Admin dan sedang dalam antrian pemeriksaan.
-                    </p>
-
-                    <li class="fw-semibold">Revisi</li>
-                    <p class="mb-0"> Terdapat kekurangan atau kesalahan pada data calon pelajar, calon pelajar/ wali
-                        perlu segera merevisi dan mengirimkan kembali formulir online dengak klik tombol Kirim di
-                        halaman Review.
-                    </p>
-
-                    <li class="fw-semibold">Lengkap</li>
-                    <p class="mb-0"> Data calon pelajar telah diverifikasi oleh Admin dan dinyatakan lengkap. Harap
-                        unduh Dokumen Pendaftaran untuk kemudian di cetak dan dibawa ke lokasi ujian masin-masing.
-                    </p>
-
-                    <li class="fw-semibold">Pembayaran</li>
-                    <p class="mb-0">Jika berkas-berkas syarat ujian-masuk sudah selesai diperiksa oleh petugas saat tiba
-                        di lokasi ujian, orang tua/wali dan calon pelajar akan mendapatkan Nomor Virtual Account untuk
-                        melunasi pembayaran secara online (non tunai).
-                    </p>
-
-                    <li class="fw-semibold">Lunas</li>
-                    <p class="mb-0">Status data Lunas berarti pembayaran telah berhasil dilakukan. Nomor Ujian akan
-                        tertera pada halaman dasbor Capel.
-                    </p>
-                </ol>
-            </div>
-            <h5 id="addcapel">
-                <a href="#addcapel">Tambah Capel</a>
-            </h5>
-            <p class="ps-5">
-                Pendaftaran Capel dilakukan secara online. Pendaftar diwajibkan mengisi seluruh formulir yang ada dan bertanggungjawab atas data yang dikirimkan. Klik pada tombol <button class="btn btn-sm btn-success fs-12">Tambah Capel</button> dasbor untuk mulai mendaftarkan Capel.            </p>
-            <h5 id="forms-validation">
-                <a href="#forms-validation">Formulir &amp; Verifikasi</a>
-            </h5>
-            <p class="ps-5">
-                Terdapat tujuh formulir yang harus dilengkapi oleh pendaftar dan akan diverifikasi oleh admin. Verifikasi data akan memakan waktu beberapa hari.            </p><div class="forms ps-5">
-                Formulir tersebut adalah sebagai berikut:
-                <ol>
-                    <li>Formulir Biodata</li>
-                    <li>Formulir Alamat</li>
-                    <li>Formulir Akademis</li>
-                    <li>Formulir Keluarga</li>
-                    <li>Formulir Angket</li>
-                    <li>Formulir Kesehatan</li>
-                    <li>Berkas Pendaftaran. <a href="#upload-documents" class="btn btn-sm btn-primary fs-12">selengkapnya</a>
-                    </li>
-                </ol>
-            </div>
-            <p></p>
-            <h5 id="test-zones">
-                <a href="#test-zones">Zona Ujian Masuk</a>
-            </h5>
-            <p class="ps-5">
-                Zona Ujian Masuk capel ditentukan dengan data provinsi yang tertera pada Kartu Keluarga dan/atau alamat domisili masing-masing capel. Periksa pembagian zona ujian masuk di halaman <a href="https://www.gontor.ac.id/pendaftaran" class="text-decoration-none text-blue">gontor.ac.id/pendaftaran</a>.            </p>
-            <h5 id="upload-documents">
-                <a href="#upload-documents">Unggah Berkas Pendaftaran</a>
-            </h5>
-            <p class="ps-5">
-                Berkas yang harus diunggah adalah Pasfoto, Kartu Keluarga, Ijazah Terakhir. Surat Keterangan Domisili wajib diunggah jika pendaftar mengisi alamat domisili pada formulir alamat.            </p>
-            <div class="ps-5">
-                <img src="/img/pasfoto.png" height="150" alt="">
-                <img src="/img/kk.jpeg" height="150" alt="">
-                <img src="/img/ijazah.jpeg" height="150" alt="">
-            </div>
-            <p></p>
-            <h4 id="fees-payment">
-                <a href="#fees-payment">Biaya &amp; Pembayaran</a>
-            </h4>
-            <p class="ps-4">
-                Biaya pendaftaran yang akan dibayarkan adalah <mark>6,880,500 untuk capel putra</mark> dan <mark>6,748,000 untuk capel putri</mark>. Pembayaran hanya dilakukan saat Capel dan Orang tua/Wali telang tiba di kampus lokasi ujian.            </p>
-            <h5 id="method">
-                <a href="#method">Metode Pembayaran</a>
-            </h5>
-            <p class=" ps-5">
-                Setelah melakukan pemeriksaan berkas pendaftaran dan persyaratan, nomor VA akan muncul di dasbor capel.Klik pada tombol <button class="btn btn-sm btn-success fs-12">Nomor VA</button> untuk melihat rekening tujuan pembayaran.             </p>
-
-            <div class="catatan fs-14 ps-5">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="alert alert-warning" role="alert">
-                            <div>Note:</div>
-                            <ul>
-                                <li>Jangan sampai nomor VA capel tertukar dengan capel lainnya saat melakukan transfer atau transaksi pembayaran melalui m-banking, mesin ATM dll.                                </li>
-                                <li>Pastikan nominal yang akan dibayarkan telah sesuai.                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h5 class="ps-4 pe-0">Apa itu nomor VA (Virtual Account)?</h5>
-            <figure>
-                <blockquote class="blockquote ps-5">
-                    <p class="fs-16">
-                        Virtual Account adalah nomor virtual rekening bank yang disediakan guna melakukan transaksi pembayaran.                    </p>
-                </blockquote>
-                <figcaption class="blockquote-footer ps-5">
-                    source <cite title="Source Title">bfi.co.id</cite>
-                </figcaption>
-            </figure>
-            <h5 id="when-pay">
-                <a href="#when-pay">Kapan Pembayaran Dilakukan?</a>
-            </h5>
-            <p class=" ps-5">
-                Pembayaran biaya pendaftaran dilakukan di kampus lokasi ujian, setelah pemeriksaan berkas. Calon Pelajar akan mendapatkan nomor ujian setelah melunasi biaya pendaftaran.             </p>
             <h4 id="help">
                 <a href="#help">Bantuan</a>
             </h4>
