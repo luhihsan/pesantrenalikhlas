@@ -9,7 +9,7 @@
     ?>
     <div class="row">
         <div class="col-3">
-            <img src="../../berkas/<?= $data['foto'] ?>" alt="" width="200">
+            <img src="../../assets/img/<?= $data['foto'] ?>" alt="" width="200">
         </div>
         <div class="col">
             <table class="table">

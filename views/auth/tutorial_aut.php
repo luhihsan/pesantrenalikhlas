@@ -93,7 +93,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../pendaftar">Beranda</a>
+                        <a class="nav-link" href="../auth">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">Tutorial</a>
@@ -101,10 +101,11 @@
             </div>
             <hr class="mx-2 m-0" style="height:20px; border: 1px solid rgba(0, 0, 0, 0.2)">
             <div class="dropdown">
-                <a class="btn btn-white dropdown-toggle" href="" role="button" data-toggle="dropdown"><?= $_SESSION['nama'] ?></a>
+            <a class="btn btn-white" href="?register">Buat Akun</a>
+                <a class="btn btn-white dropdown-toggle" href="" role="button" data-toggle="dropdown">Login</a>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="?profil"><i class="fa fa-user mr-2"></i>Profil</a>
-                    <a class="dropdown-item" href="../../views/auth/"><i class="fa fa-sign-out-alt mr-2"></i>Keluar</a>
+                    <a class="dropdown-item" href="?login"><i class="fa fa-user mr-2"></i>Login</a>
+                    <a class="dropdown-item" href="?login-admin"><i class="fa fa-user mr-2"></i>Login As Admin</a>
                 </div>
             </div>
         </div>
@@ -118,6 +119,7 @@
 
             
 <div class="tutorial-index">
+
 <br>
     <h3>Tutorials</h3>
 

@@ -93,7 +93,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link " href="index.php">Beranda</a>
+                        <a class="nav-link " href="../pendaftar">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../pendaftar/tutorial.php">Tutorial</a>

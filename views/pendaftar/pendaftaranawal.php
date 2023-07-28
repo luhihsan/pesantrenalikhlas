@@ -19,6 +19,13 @@
                             <label for="tgllahir">Tanggal lahir</label>
                             <input type="date" class="form-control" id="tgllahir" name="tgllahir" required>
                         </div>
+                        
+                        <label for="customFile">Foto</label>
+                        <div class="custom-file">
+                            <input type="file" name="image" id = "image" accept=".jpg, .jpeg, .png">
+                            
+                        </div>
+                        
                         <div class="form-group">
                             <label for="nama">NISN</label>
                             <input type="text" class="form-control" id="nisn" name="nisn" placeholder="masukkan NISN anda" required>

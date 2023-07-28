@@ -164,10 +164,10 @@ if (isset($_GET['beranda'])) {
     }
 } elseif (isset($_GET['profil'])) {
     $id = $_SESSION['id'];
-    $cekstatus = mysqli_query($connect, "SELECT * FROM pendaftar WHERE id='$id'");
+    $cekstatus = mysqli_query($connect, "SELECT * FROM pendaftaranawal WHERE id='$id'");
     $data3awal = mysqli_fetch_array($cekstatus);
     
-    if ($data3awal && isset($data3awal['status']) && $data3awal['status'] == '1') {
+    if ($data3awal && isset($data3awal['status']) && $data3awal['status'] == '0') {
         include "profile.php";
     } else {
         include "notsetprofile.php";

@@ -121,7 +121,7 @@
                                 Pelajari tutorial untuk mendaftar menjadi siswa
                             </div>
                             <div class="d-block text-center mt-auto"><br>
-                                <a class="btn btn-sm btn-primary px-3" href="site/login">Selengkapnya</a>
+                                <a class="btn btn-sm btn-primary px-3" href="tutorial_aut.php">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                             Butuh bantuan? hubungi kami di sini
                             </div>
                             <div class="d-block text-center mt-auto"><br>
-                                <a class="btn btn-sm btn-primary px-3" href="site/login">Selengkapnya</a>
+                                <a class="btn btn-sm btn-primary px-3" href="?login">Selengkapnya</a>
                             </div>
                         </div>
                     </div>

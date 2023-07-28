@@ -93,10 +93,8 @@
                         <a class="nav-link" href="?beranda">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Tutorial</a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">FAQ</a>
-                    </li>
+                        <a class="nav-link" href="tutorial_aut.php">Tutorial</a>
+                    
                 </ul>
             </div>
             <hr class="mx-2 m-0" style="height:20px; border: 1px solid rgba(0, 0, 0, 0.2)">
