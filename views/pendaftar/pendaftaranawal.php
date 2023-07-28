@@ -50,6 +50,7 @@
                             <option value="Tahfidz">Tahfidz</option>
                             <option value="Kitab">Kitab</option>
                         </select><br><br>
+                        <input type="hidden" name="id_user" value="<?php echo $id; ?>">
                         </div>
 
                        
