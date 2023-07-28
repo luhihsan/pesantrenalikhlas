@@ -148,10 +148,6 @@
                 <li>
                     <a href="#help">Bantuan</a>
                 </li>
-                <li>
-                    <a href="#abroad-student">Calon Pelajar Luar Negeri</a>
-                </li>
-
             </ul>
 
             <p></p>
@@ -189,37 +185,23 @@
             <p class="ps-5">Setelah berhasil login maka user akan berada pada halaman utama pendaftaran. Selanjutnya user akan memilih menu pendaftaran yang ada di sebelah kiri.</p>
             <img src= "../../assets/img/step1.png" class="mb-1">
             <p class="ps-5">User akan masuk ke halaman pendaftaran untuk mengisikan data yang diperlukan untuk mendaftar sebagai calon santri.</p>
+            <img src= "../../assets/img/form_daftar.png" class="mb-1">
             <p class="ps-5">Setelah selesai mengisikan data yang diperlukan, user melakukan pendaftaran dengan klik pada tombol "Daftar" yang ada dibawah halaman pendafataran.</p>
+            <img src= "../../assets/img/confirm_daftar.png" class="mb-1">
             <p class="ps-5">notifikasi "Sukses Mendaftar" akan muncul jika pendaftaran berhasil. User dapat kembali ke halaman awal dan menunggu konfirmasi penerimaan dari admin.</p>
 
 
-
-            <div class="catatan fs-14 ps-5">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="alert alert-warning" role="alert">
-                            <div>Note:</div>
-                            <ul>
-                                <li>Jika membuat akun dengan metode <span class="text-danger">SSO Gmail</span> , untuk seterusnya Pendaftar disarankan login dengan metode tersebut dengan mengklik <button class="btn btn-sm btn-outline-danger fs-12">Login with Google</button>.                                </li>
-                                <li>Jika ingin login dengan form login website (bukan SSO Gmail), pendaftar/pemilik akun yang sebelumnya login dengan <span class="text-danger">SSO Gmail</span> harus melakukan riset password akun pendaftaran terlebih dahulu dan kemudian melakukan mendaftarkan password baru melalui link yang telah dikirimkan ke email pendaftar.                                </li>
-                                <li>Pendaftar bertanggungjawab penuh atas keamanan akun masing-masing.                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <h4 id="help">
                 <a href="#help">Bantuan</a>
             </h4>
-            <p class="ps-4">
-                Bantuan adalah fitur pertanyaan bagi pendaftar, orang tua/wali, jika ada hal terkait pendaftaran capel.
-                Klik tombol <button class="btn btn-sm btn-success fs-12">Tanya</button> pada halaman Bantuan dan isi formulir pertanyaan dengan benar. Sisipkan file/berkas bilamana diperlukan.            </p>
-            <h4 id="abroad-student">
-                <a href="#abroad-student">Calon Pelajar Luar Negeri</a>
-            </h4>
-            <p class="ps-4">
-                Calon Pelajar Luar Negeri adalah mereka yang bukan Warga Negara Indonesia (WNI), baik ia tinggal di negaranya atau menetap di wilayah Indonesia. <mark>WNI yang menetap/tinggal di luar negeri tidak termasuk dalam kategori Capel Luar Negeri dan harus mendaftar dengan memilih <strong>Indonesia</strong> sebagai kewarga-negaraannya. </mark>.            </p>
-            <p></p>
+            <p class="ps-4">Jika anda memerlukan bantuan terkait pendaftaran dan hal lainnya yang berhubungan dengan peneriamaan calon santri</p>
+            <p class="ps-4">Anda dapat menguhubungi kami dengan mengisikan deskirpsi masalah anda pada menu bantuan yang tersedia di halaman utama</p>
+            <img src= "../../assets/img/menu_bantuan.png" class="mb-1">
+            <p class="ps-4">Pada halaman ini anda dapat menuliskan deskripsi masalah yang dihadapi dan dapat melampirkan berkas atau foto sebagai bagian dari deskripsi masalah yang ada.</p>
+            <img src= "../../assets/img/form_bantuan.png" class="mb-1">
+            <p class="ps-4">Setelah mengisikan deskripsi masalah yang anda miliki. Klik tombol "Submit."</p>
+            <p class="ps-4">Selanjutnya tunggulah admin kami untuk membantu menjawab masalah yang anda hadapi.</p>
+
         </div>
     </div>
 </div>
