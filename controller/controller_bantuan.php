@@ -27,8 +27,7 @@
                     // For example, you can use this value in your SQL INSERT or UPDATE query
 
                     // If you want to redirect back to the original form after successful upload
-                    header('Location: ../views/pendaftar/tes.php');
-                    exit();
+                    
                 } else {
                     // Failed to move the uploaded image to the target folder
                     echo "Failed to upload the image.";
@@ -45,11 +44,10 @@
     $judul = $_POST['judul'];
     $id = $_SESSION['id'];
     $isi = $_POST['isi'];
-    $customFile = $_POST['image'];
 
     // Masukkan data ke database (tabel pendaftarawal)
     $querypendaftarawal = mysqli_query($connect, "INSERT INTO bantuan (judul, pertanyaan, lampiran, id_user) 
-    VALUES ('$judul', '$isi', '$customFile', '$id')");
+    VALUES ('$judul', '$isi', '$newImageName', '$id')");
 
 
     if ($querypendaftarawal) {
