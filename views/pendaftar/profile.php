@@ -48,7 +48,7 @@
                 if ($data['status'] == '1') {
                     echo "<div class='alert alert-warning' role='alert'>Status : Calon Santri</div>";
                 } else {
-                    echo "<div class='alert alert-warning' role='alert'>Status : User</div>";
+                    echo "<div class='alert alert-warning' role='alert'>Status : Sedang Dalam Proses Penilaian Panitia</div>";
                 }
             ?>
         </div>

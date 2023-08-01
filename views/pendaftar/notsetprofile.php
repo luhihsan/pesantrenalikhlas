@@ -61,14 +61,22 @@
                     <td>:</td>
                     <td><?php echo isset($row_profil['program']) ? $row_profil['program'] : 'N/A'; ?></td>
                 </tr>
+                <tr>
+                    <td>Status Pendaftaran</td>
+                    <td>:</td>
+                    <td>
+                    <?php 
+                        if ($row_profil['status'] == '1') {
+                            echo "<span class='badge badge-success'>Selamat Anda Diterima Sebagai Calon Santri</span>";
+                        } else if  ($row_profil['status'] == '2'){
+                            echo "<span class='badge badge-danger'>Mohan Maaf, Anda Tidak Lolos Seleksi Sebagai Calon Santri</span>";
+                        } else {
+                            echo "<div class='alert alert-warning' role='alert'>Status : Sedang Dalam Proses Penilaian Panitia</div>";
+                        }
+                    ?>
+                    </td>
+                </tr>
             </table>
-            <?php 
-              if ($data_status && isset($data_status['status']) && $data_status['status'] == '1') {
-                echo "<div class='alert alert-warning' role='alert'>Status : Calon Santri</div>";
-            } else {
-                echo "<div class='alert alert-warning' role='alert'>Status : User</div>";
-            }
-            ?>
         </div>
     </div>
 </div>
