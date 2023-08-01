@@ -98,7 +98,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../pendaftar/tutorial.php">Tutorial</a>
                     <li class="nav-item">
-                        <a class="nav-link active" href="">Bantuan</a>
+                        <a class="nav-link active" href="bantuan.php">Bantuan</a>
                     </li>
                 </ul>
             </div>
