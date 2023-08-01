@@ -9,39 +9,39 @@
         <div class="container text-center py-5 my-5">
         
         <div class="container mt-4">
-            <div class="row align-items-center">
+            <div class="row justify-content-center">
 
-                <!-- Card 2 -->
-                <div class="col-md">
+               <!-- Card 1-->
+               <div class="col-md-3">
                     <div class="card">
-                        <img src="../../assets/img/santridipesantren.jpg" class="card-img-top" alt="" >
+                        <img src="../../assets/img/monitoring.jpg" class="card-img-top" alt="" width="300" height="200">
                         <div class="card-body d-flex flex-column gap-3">
                             <div class="brand text-center">
-                                <p class="title mb-0 mt-2"><b>Monitoring Data Pendaftaran Calon Santri</b></p>
+                                <p class="title mb-0 mt-2"><b>Monitoring Pendaftaran Calon Santri</b></p>
                             </div>
                             <div class="description text-center" style="color:#909294">
-                               Lakukan Monitoring dan Penerimaan Calon Santri Disini
+                               Lakukan Monitoring dan Proses Seleksi Calon Santri Melalui Portal Ini
                             </div>
                             <div class="d-block text-center mt-auto"><br>
-                                <a class="btn btn-sm btn-primary px-3" href="?monitoring">Monitoring Data</a>
+                                <a class="btn btn-sm btn-primary px-3" href="?pendaftaranawal">Monitoring</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="col-md">
+                <!-- Card 2 -->
+                <div class="col-md-3">
                     <div class="card">
-                        <img src="../../assets/img/bgsantren.jpg" class="card-img-top" alt="">
+                        <img src="../../assets/img/bantuan.jpg" class="card-img-top" alt="" width="300" height="200">
                         <div class="card-body d-flex flex-column gap-3">
                             <div class="brand text-center">
-                                <p class="title mb-0 mt-2"><b>Bantuan</b></p>
+                                <p class="title mb-0 mt-2"><b>Portal Bantuan Pendaftaran Calon Santri</b></p>
                             </div>
                             <div class="description text-center" style="color:#909294">
-                                Jawab Semua Pertanyaan dan Keluhan Pendaftar Disini
+                               Lakukan Monitoring dan Jawab Pertanyaan Dari Calon Santri Dari Portal Ini
                             </div>
                             <div class="d-block text-center mt-auto"><br>
-                                <a class="btn btn-sm btn-primary px-3" href="?pengaturan">Lihat Pertanyaan</a>
+                                <a class="btn btn-sm btn-primary px-3" href="?pendaftaranawal">Jawab Pertanyaan</a>
                             </div>
                         </div>
                     </div>
