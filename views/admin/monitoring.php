@@ -50,7 +50,7 @@
                             <!-- Misalnya, tombol edit dan hapus -->
                             <?php
                             if ($data['status'] == 0) {
-                                echo "<a href='generate_pdf.php?no_pendfawal=$data[no_pendfawal]' target='_blank' class='btn btn-info'>Cetak PDF</a>";
+                                echo "<a href='../../controller/generate_pdf.php?no_pendfawal=$data[no_pendfawal]' target='_blank' class='btn btn-info'>Cetak PDF</a>";
                                 echo "<a href='../../controller/konfirmasi.php?yes&no_pendfawal=$data[no_pendfawal]' class='btn btn-warning'>Terima</a>
                                     <a href='../../controller/konfirmasi.php?no&no_pendfawal=$data[no_pendfawal]' class='btn btn-danger'>Tolak</a>";
                             } else if  ($data['status'] == 2)  {
@@ -58,7 +58,7 @@
                                 echo "<button type='button' class='btn btn-warning' data-toggle='modal' data-target='#updateModal{$data['no_pendfawal']}'>Edit Hasil</button>";
                             } else{
                                 echo "<span class='badge badge-success'>Diterima</span>";
-                                echo "<a href='generate_pdf.php?no_pendfawal=$data[no_pendfawal]' target='_blank' class='btn btn-info'>Cetak PDF</a>";
+                                echo "<a href='../../controller/generate_pdf.php?no_pendfawal=$data[no_pendfawal]' target='_blank' class='btn btn-info'>Cetak PDF</a>";
                                 echo "<button type='button' class='btn btn-warning' data-toggle='modal' data-target='#updateModal{$data['no_pendfawal']}'>Edit Hasil</button>";
                             }                            
                             ?>

@@ -1,33 +1,22 @@
 <?php
-include
-require_once('../.../controller/tc-lib-pdf-main/src/Tcpdf.php');
+// Include the FPDF library
+require('fpdf186/fpdf.php');
 
+// Create a new FPDF instance
+$pdf = new FPDF();
+$pdf->AddPage();
 
-if (isset($_GET['no_pendfawal'])) {
-    $no_pendfawal = $_GET['no_pendfawal'];
+// Set the font and size
+$pdf->SetFont('Arial', '', 12);
 
-    // Ambil data untuk calon siswa tertentu dengan $no_pendf dari database
-    // Sertakan koneksi database Anda di sini
-    $query = mysqli_query($connect, "SELECT * FROM pendaftaranawal WHERE no_pendfawal = '$no_pendfawal'");
-    $data = mysqli_fetch_assoc($query);
+// Add your invoice content
+$pdf->Cell(0, 10, 'Invoice', 0, 1, 'C'); // Title
+$pdf->Cell(50, 10, 'Nama :', 0, 0);
+$pdf->Cell(0, 0, 'No Registrasi:', 0, 0);
+$pdf->Cell(0, 0, 'Dinyatakan DITERIMA/DITOLAK sebagai calon santri baru MTS Al-Ikhlas Berbah dari hasil seleksi tahun akademik 2023/2024 pada', 0, 1); // Current date
 
-    // Untuk tujuan demonstrasi, kita asumsikan Anda telah mengambil data yang diperlukan.
-    // Ubah baris berikut untuk menggunakan data aktual dari database.
-    $data = [
-        'no_pendfawal' => $no_pendfawal,
-        'nama' => 'John Doe',
-        // Tambahkan bidang data lain di sini
-    ];
+// Add more invoice details here...
 
-    // Membuat PDF
-    $pdf = new TCPDF();
-    $pdf->AddPage();
-    $pdf->SetFont('times', '', 12);
-    $pdf->Cell(0, 10, 'Detil Calon Siswa', 0, 1, 'C');
-    $pdf->Cell(0, 10, '========================', 0, 1, 'C');
-    $pdf->Cell(0, 10, 'No: ' . $data['no_pendf'], 0, 1, 'L');
-    $pdf->Cell(0, 10, 'Nama: ' . $data['nama'], 0, 1, 'L');
-    // Tambahkan bidang data lain di sini
-    $pdf->Output();
-}
+// Output the PDF
+$pdf->Output('invoice.pdf', 'D'); // 'D' will force download the PDF
 ?>
