@@ -73,24 +73,6 @@
 
         <div class="container mt-4">
             <div class="row">
-                <!-- Card 1 -->
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="../../assets/img/grup hadroh.jpg" class="card-img-top" alt="">
-                        <div class="card-body d-flex flex-column gap-3">
-                            <div class="brand text-center">
-                                <p class="title mb-0 mt-2"><b>Lengkapi Berkas</b></p>
-                            </div>
-                            <div class="description text-center" style="color:#909294">
-                                Lengkapi akun anda untuk melanjutkan ke pendaftaran
-                            </div>
-                            <div class="d-block text-center mt-auto"><br>
-                                <a class="btn btn-sm btn-primary px-3" href="?login">Login</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Card 2 -->
                 <div class="col-md-3">
                     <div class="card">
@@ -146,6 +128,86 @@
                 </div>
             </div>
         </div>
+
+    
+
+        <hr>
+
+        <div class="text-center md-10">
+            
+  <div class="probootstrap-text probootstrap-animate">
+              <h3>Tentang Pondok Pesantren</h3>
+              <p>Pondok Pesantren Al-Ikhlas Jogja merupakan lembaga pendidikan Islam yang bertujuan untuk memberikan pendidikan dan pembinaan kepada para santri dalam hal pengetahuan agama, akhlak, serta keterampilan hidup. Dengan mengutamakan nilai-nilai keagamaan, pesantren ini berkomitmen untuk mencetak generasi muda yang berkualitas, berakhlak mulia, dan memiliki wawasan lingkungan.
+
+Pondok Pesantren Al-Ikhlas Jogja menyediakan berbagai program pendidikan seperti tahfizul Quran, studi agama Islam, ilmu bahasa Arab, studi Al-Quran dan Hadis, ilmu fiqih dan ushul fiqih, tafsir dan ulumul Quran, serta aqidah dan akhlak. Melalui pembelajaran yang berbasis sains dan teknologi, pesantren ini berusaha memberikan pendidikan yang relevan dengan perkembangan zaman.
+
+Dengan visi terwujudnya sekolah berkualitas, berkarakter, dan berwawasan lingkungan, serta misi menyiapkan sarana prasarana dan SDM yang memenuhi standar SNP, Pondok Pesantren Al-Ikhlas Jogja berupaya memberikan pengalaman pendidikan yang holistik dan terpadu kepada para santri. </p>
+              
+            </div>
+  
+    <div class="probootstrap-image probootstrap-animate" style="background-image: url({{ url('frontend/enlight-master/img/slider_3.jpg') }})"></div>
+    <iframe  width="660" height="415" src="https://www.youtube.com/embed/MC03etv-rYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" class="btn-video popup-vimeo"></iframe>
+  </div>
+</div>
+
+
+        </div> <!-- /container -->
+
+        <hr>
+
+        <div class="container p-3">
+    <h2 class="text-center">Program Pesantren</h2>
+    <div class="row">
+        <div class="col text-right">
+            <h5>Tahfizul Quran</h5>
+            <h5>Studi Agama Islam</h5>
+            <h5>Ilmu Bahasa Arab</h5>
+        </div>
+        <div class="col-1 text-center">
+            <h5>o</h5>
+            <h5>o</h5>
+            <h5>o</h5>
+            <h5>o</h5>
+        </div>
+        <div class="col">
+            <h5>Studi Al-Quran dan Hadis</h5>
+            <h5>Ilmu Fiqih dan Ushul Fiqih</h5>
+            <h5>Tafsir dan Ulumul Quran</h5>
+            <h5>Aqidah dan Akhlak</h5>
+        </div>
+    </div>
+</div>
+
+
+        <hr>
+
+        <div class="container p-3">
+            <div class="row">
+            <div class="col-8">
+                    <h4>Galeri Pesantren</h4>
+                    <img src="../../assets/img/Pengasuhpesantren.jpg" alt="" width="500">
+                    <img src="../../assets/img/halamandepanpesantren.jpg" alt="" width="500">
+                    <img src="../../assets/img/santridipesantren.jpg" alt="" width="500">
+                </div>
+                <div class="col-4">
+                    <div class="card shadow m-2">
+                        <div class="card-body">
+                        <h6>Kegiatan rutin baca Al-Quran di pesantren Al-ikhlas</h6>
+                        </div>
+                    </div>
+                    <div class="card shadow m-2">
+                        <div class="card-body">
+                        <h6>Tahfidz quran pesantren Al-ikhlas</h6>
+                        </div>
+                    </div>
+                    <div class="card shadow m-2">
+                        <div class="card-body">
+                        <h6>Pelaksanaan uji kompetensi keahllian tahun ajaran 2023/2024</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
     </div>
 
     <!-- Bootstrap JS (Optional, if you need to use Bootstrap's JavaScript features) -->
