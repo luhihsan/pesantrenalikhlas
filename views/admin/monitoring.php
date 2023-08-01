@@ -50,7 +50,7 @@
                             <!-- Misalnya, tombol edit dan hapus -->
                             <?php
                             if ($data['status'] == 0) {
-                                echo "<a href='../../controller/generate_pdf.php?no_pendfawal=$data[no_pendfawal]' target='_blank' class='btn btn-info'>Cetak PDF</a>";
+                                
                                 echo "<a href='../../controller/konfirmasi.php?yes&no_pendfawal=$data[no_pendfawal]' class='btn btn-warning'>Terima</a>
                                     <a href='../../controller/konfirmasi.php?no&no_pendfawal=$data[no_pendfawal]' class='btn btn-danger'>Tolak</a>";
                             } else if  ($data['status'] == 2)  {

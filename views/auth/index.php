@@ -94,16 +94,16 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="tutorial_aut.php">Tutorial</a>
-                    
+                    </li>
                 </ul>
             </div>
             <hr class="mx-2 m-0" style="height:20px; border: 1px solid rgba(0, 0, 0, 0.2)">
             <div class="dropdown">
-            <a class="btn btn-white" href="?register">Buat Akun</a>
+            <a class="btn btn-white" href="../auth/?register">Buat Akun</a>
                 <a class="btn btn-white dropdown-toggle" href="" role="button" data-toggle="dropdown">Login</a>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="?login"><i class="fa fa-user mr-2"></i>Login</a>
-                    <a class="dropdown-item" href="?login-admin"><i class="fa fa-user mr-2"></i>Login As Admin</a>
+                    <a class="dropdown-item" href="../auth/?login"><i class="fa fa-user mr-2"></i>Login</a>
+                    <a class="dropdown-item" href="../auth/?login-admin"><i class="fa fa-user mr-2"></i>Login As Admin</a>
                 </div>
             </div>
         </div>

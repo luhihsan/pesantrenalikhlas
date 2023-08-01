@@ -145,11 +145,16 @@ if (isset($_GET['beranda'])) {
     $cekstatus = mysqli_query($connect, "SELECT * FROM pendaftaranawal WHERE id='$id'");
     $data2awal = mysqli_fetch_array($cekstatus);
 
-    if ($data2awal && $data2awal['status'] == '0') {
-        include "sudahdaftar.php";
-    }else {
+    if ($data2awal && isset($data2awal['status'])) {
+        if ($data2awal['status'] == '0' || $data2awal['status'] == '1' || $data2awal['status'] == '2') {
+            include "sudahdaftar.php";
+        } else {
+            include "pendaftaranawal.php";
+        }
+    } else {
         include "pendaftaranawal.php";
     }
+    
 } elseif (isset($_GET['daftarsiswa'])) {
     // Logika atau aksi untuk halaman "Pemeringkatan"
     $id = $_SESSION['id'];
@@ -167,11 +172,16 @@ if (isset($_GET['beranda'])) {
     $cekstatus = mysqli_query($connect, "SELECT * FROM pendaftaranawal WHERE id='$id'");
     $data3awal = mysqli_fetch_array($cekstatus);
     
-    if ($data3awal && isset($data3awal['status']) && $data3awal['status'] == '0') {
-        include "profile.php";
+    if ($data3awal && isset($data3awal['status'])) {
+        if ($data3awal['status'] == '0') {
+            include "profile.php";
+        } elseif ($data3awal['status'] == '1' || $data3awal['status'] == '2') {
+            include "profile.php";
+        }
     } else {
         include "notsetprofile.php";
     }
+
 } else {
     // Jika tidak ada parameter yang sesuai, maka muat halaman "Beranda" sebagai halaman default.
     include "beranda.php";

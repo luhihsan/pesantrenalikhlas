@@ -32,6 +32,17 @@
                     <?php 
                        echo "<div class='alert alert-warning' role='alert'>Status : Daftarkan diri anda!</div>";
                        
+                        if ($data_status['status'] == '1') {
+                            echo "<span class='badge badge-success'>Selamat Anda Diterima Sebagai Calon Santri</span>";
+                            echo "<br>";
+                            echo "<br>";
+                            echo "<a href='../../controller/generate_pdf.php?no_pendfawal=$data_status[no_pendfawal]' target='_blank' class='btn btn-info'>Cetak PDF</a>";
+                        } else if  ($data_status['status'] == '2'){
+                            echo "<span class='badge badge-danger'>Mohan Maaf, Anda Tidak Lolos Seleksi Sebagai Calon Santri</span>";
+                        } else {
+                            echo "<div class='alert alert-warning' role='alert'>Status : Sedang Dalam Proses Penilaian Panitia</div>";
+                        }   
+                    
                        
                     ?>
                     </td>

@@ -98,7 +98,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../pendaftar/tutorial.php">Tutorial</a>
                     <li class="nav-item">
-                        <a class="nav-link active" href="">Bantuan</a>
+                        <a class="nav-link active" href="../pendaftar/?bantuan">Bantuan</a>
                     </li>
                 </ul>
             </div>
@@ -106,7 +106,7 @@
             <div class="dropdown">
                 <a class="btn btn-white dropdown-toggle" href="" role="button" data-toggle="dropdown"><?= $_SESSION['nama'] ?></a>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="?profil"><i class="fa fa-user mr-2"></i>Profil</a>
+                    <a class="dropdown-item" href="../pendaftar/?profil"><i class="fa fa-user mr-2"></i>Profil</a>
                     <a class="dropdown-item" href="../../views/auth/"><i class="fa fa-sign-out-alt mr-2"></i>Keluar</a>
                 </div>
             </div>
