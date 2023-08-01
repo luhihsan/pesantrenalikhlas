@@ -100,7 +100,7 @@
         <script>
             // Change the 'id' attribute of the modal to '3'
             document.addEventListener('DOMContentLoaded', function () {
-            document.getElementById('updateModalLabel').setAttribute('id', 'myModal3');
+            document.getElementById('updateModalLabel').setAttribute('id', 'no_pendfawal');
             });
         </script>
 </main>
