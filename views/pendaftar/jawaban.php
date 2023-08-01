@@ -118,33 +118,58 @@
     <main role="main" style="min-height:400px">
     <div class="container py-5 h-100">
       <div class="row  justify-content-center  h-100">
-        <div class="col">
+        
+
+      <?php
+      $id = $_SESSION['id'];
+      $id_jawab = $_GET['jawab'];
+      $jawab = mysqli_query($connect, "SELECT * FROM bantuan WHERE id_bantuan = '$id_jawab' ");
+      $data = mysqli_fetch_assoc($jawab);
+      
+      ?>
+      
+        <div class="col-lg-10 col-xl-8">
           <div class="card" style="border-radius: 10px;">
-            <form class="card-body p-4" action="../../controller/controller_bantuan.php" method="post" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="judul">Judul</label>
-                    <input type="text" class="form-control" id="judul" name="judul" placeholder="Isi Judul Bantuan">
+                <div class="card-body pl-4 pt-4 pb-2"> 
+                    <h4>
+                        <?php
+                        echo $data['judul'];
+                        ?>
+                    </h4> 
                 </div>
-                <div class="form-group mt-3">
-                    <label for="isi">Isi</label>
-                    <textarea class="form-control" id="isi" name="isi" rows="3"></textarea>
+                <div class="card-body pl-4 pt-1"> 
+                        <?php
+                        if ($data['jawaban'] !== "") {
+                            ?>
+                            <h5>Pertanyaan</h5>
+                            <?php
+                            echo $data['pertanyaan'];
+                            ?>
+                            <br>
+                            <br>
+                            <h5>Jawaban</h5>
+                            <?php
+                            echo $data['jawaban'];
+                        } else {
+                            echo "Pertanyaan masih menunggu respon dari admin";
+                        }
+                        ?> 
+
                 </div>
-                <label for="customFile">Lampiran</label>
-                <div class="custom-file">
-                    <input type="file" name="image" id = "image" accept=".jpg, .jpeg, .png">
-                </div>
-            <button type="submit" class="btn btn-primary mt-3" style="width: 90px;">Submit</button>       
-            </form>
+                
+            
             </div>
         </div>
+
+
         <div class="col-lg-3">
             <div class="card p-2" style="border-radius: 10px;">
                 <div class="card-body p-2"> 
                     <h5>
                         History
-                        
                     </h5> 
                 </div>
+                
                 <div class="card-body pl-2 pt-1"> 
                     <?php
                     $id = $_SESSION['id'];
@@ -162,8 +187,10 @@
                     endforeach;
                     ?>
                 </div>
+
             </div>
         </div>
+        
     </div>
 </div>
         
