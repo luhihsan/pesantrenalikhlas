@@ -2,6 +2,12 @@
 // Include the FPDF library
 require('fpdf186/fpdf.php');
 
+include "connect.php";
+
+$no_pendfawal = $_GET['no_pendfawal'];
+$query = mysqli_query($connect, "SELECT * FROM pendaftaranawal WHERE no_pendfawal = '$no_pendfawal' ");
+$data = mysqli_fetch_array($query);
+
 // Create a new FPDF instance
 $pdf = new FPDF();
 $pdf->AddPage();
@@ -16,11 +22,11 @@ $pdf->Ln(5);
 
 // Isi
 $pdf->SetFont('Arial', '', 12);
-$pdf->Cell(0, 8, 'Nama : ', 0, 1);
-$pdf->Cell(0, 8, 'No Registrasi : ', 0, 1);
-$pdf->Cell(0, 8, 'Dinyatakan sebagai calon santri baru MTS Al-Ikhlas Berbah', 0, 1);
+$pdf->Cell(0, 8, 'Nama : '.$data['nama'], 0, 1);
+$pdf->Cell(0, 8, 'No Registrasi : '.$data['no_pendfawal'], 0, 1);
+$pdf->Cell(0, 8, 'Dinyatakan DITERIMA sebagai calon santri baru MTS Al-Ikhlas Berbah', 0, 1);
 $pdf->Cell(0, 8, 'dari hasil seleksi tahun akademik 2023/2024 pada', 0, 1);
-$pdf->Cell(0, 8, 'Nama Program : ', 0, 1);
+$pdf->Cell(0, 8, 'Nama Program : '.$data['program'], 0, 1);
 $pdf->Cell(0, 8, 'Untuk proses selanjutnya, calon mahasiswa wajib melakukan registrasi dan verifikasi dokumen.', 0, 1);
 $pdf->Cell(0, 8, 'Surat Keputusan ini berlaku sejak ditetapkan.', 0, 1);
 $pdf->Ln(15);
@@ -28,7 +34,7 @@ $pdf->SetFont('Arial', 'I', 12);
 $pdf->Cell(0, 10, 'Alhamdulillahirrabil\'alamin', 0, 1);
 $pdf->Ln(10);
 $pdf->SetFont('Arial', '', 12);
-$pdf->Cell(0, 10, 'Yogyakarta, ', 0, 1, 'R');
+$pdf->Cell(0, 10, 'Yogyakarta, 1 Agustus 2023', 0, 1, 'R');
 $pdf->Ln(5);
 $pdf->SetFont('Arial', 'B', 12);
 $pdf->Cell(0, 10, 'Kepala MTs Al-Ikhlas Berbah', 0, 1, 'R');
