@@ -61,7 +61,7 @@
 
     if ($querypendaftarawal) {
         // Redirect ke halaman yang diinginkan setelah pendaftaran berhasil
-        echo "<script>alert('Pendaftaran awal siswa berhasil!'); document.location.href = '../views/pendaftar?pendaftaranawal';</script>";
+        echo "<script>alert('Pendaftaran awal siswa berhasil!'); document.location.href = '../views/pendaftar?beranda';</script>";
     } else {
         // Tampilkan pesan gagal jika pendaftaran gagal
         echo "<script>alert('Pendaftaran awal siswa gagal!'); document.location.href = '../views/pendaftar?pendaftaranawal';</script>";

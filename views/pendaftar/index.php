@@ -145,7 +145,7 @@ if (isset($_GET['beranda'])) {
     $cekstatus = mysqli_query($connect, "SELECT * FROM pendaftaranawal WHERE id='$id'");
     $data2awal = mysqli_fetch_array($cekstatus);
 
-    if ($data2awal && $data2awal['status'] == '1') {
+    if ($data2awal && $data2awal['status'] == '0') {
         include "sudahdaftar.php";
     }else {
         include "pendaftaranawal.php";
@@ -153,7 +153,7 @@ if (isset($_GET['beranda'])) {
 } elseif (isset($_GET['daftarsiswa'])) {
     // Logika atau aksi untuk halaman "Pemeringkatan"
     $id = $_SESSION['id'];
-    $cekstatus = mysqli_query($connect, "SELECT * FROM pendaftar WHERE id='$id'");
+    $cekstatus = mysqli_query($connect, "SELECT * FROM pendaftaranawal WHERE id='$id'");
     $data = mysqli_fetch_array($cekstatus);
     if ($data < 1) {
         include "belumdaftar.php";
@@ -206,7 +206,7 @@ if (isset($_GET['beranda'])) {
                     <h4>NAVIGATE</h4>
                     <ul class="list-unstyled">
                         <li><a href="?beranda" class="text-light">Beranda</a></li>
-                        <li><a href="?pendaftaran" class="text-light">Pendaftaran</a></li>
+                        <li><a href="?pendaftaranawal" class="text-light">Pendaftaran</a></li>
                         <li><a href="?daftarsiswa" class="text-light">Pemeringkatan</a></li>
                     </ul>
                 </div>
