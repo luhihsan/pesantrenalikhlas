@@ -12,14 +12,20 @@ $data = mysqli_fetch_array($query);
 $pdf = new FPDF();
 $pdf->AddPage();
 
-$pdf->Image('../logo.png', 10, 10, -300);
+$pdf->Image('../logo.png', 10, 10, -150);
 // Set the font and size
-$pdf->SetFont('Arial', '', 12);
+
+$pdf->SetFont('Arial', 'B', 26);
+$pdf->Cell(0, 19, 'MTS AL IKHLAS BERBAH', 0, 1, 'C');
+
+$pdf->SetFont('Arial', '', 15);
+$pdf->Cell(0, 2, 'Pondok Pesantren Modern DI Yogyakarta', 0, 1,'C');
+$pdf->Ln(15);
 
 // Judul
 $pdf->SetFont('Arial', 'B', 14);
 $pdf->Cell(0, 10, 'Memutuskan', 0, 1, 'C');
-$pdf->Ln(5);
+$pdf->Ln(4);
 
 // Isi
 $pdf->SetFont('Arial', '', 12);
