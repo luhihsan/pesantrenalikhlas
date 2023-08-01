@@ -15,7 +15,7 @@
         <div class="col">
             <table class="table">
                 <tr>
-                    <td>Nama lengkapaa</td>
+                    <td>Nama lengkap</td>
                     <td>:</td>
                     <td><?php echo isset($data_status['nama']) ? $data_status['nama'] : 'N/A'; ?></td>
                 </tr>
