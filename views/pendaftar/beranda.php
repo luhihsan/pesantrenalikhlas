@@ -58,10 +58,10 @@
         </div><br><br>
 
         <div class="container mt-4">
-            <div class="row align-items-center">
+            <div class="row justify-content-center">
 
                 <!-- Card 2 -->
-                <div class="col-md">
+                <div class="col-md-3">
                     <div class="card">
                         <img src="../../assets/img/santridipesantren.jpg" class="card-img-top" alt="" >
                         <div class="card-body d-flex flex-column gap-3">
@@ -79,7 +79,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-md">
+                <div class="col-md-3">
                     <div class="card">
                         <img src="../../assets/img/bgsantren.jpg" class="card-img-top" alt="">
                         <div class="card-body d-flex flex-column gap-3">
@@ -97,7 +97,7 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="col-md">
+                <div class="col-md-3">
                     <div class="card">
                         <img src="../../assets/img/halamandepanpesantren.jpg" class="card-img-top" alt="">
                         <div class="card-body d-flex flex-column gap-3">

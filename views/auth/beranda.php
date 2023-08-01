@@ -72,7 +72,7 @@
         </div><br><br>
 
         <div class="container mt-4">
-            <div class="row">
+            <div class="row justify-content-center">
                 <!-- Card 2 -->
                 <div class="col-md-3">
                     <div class="card">

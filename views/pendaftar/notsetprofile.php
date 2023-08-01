@@ -13,6 +13,7 @@
     ?>
     <div class="row">
         <div class="col-3">
+            <img src="../../assets/img/<?= $row_profil['foto'] ?>" alt="" width="200">
         </div>
         <div class="col">
             <table class="table">
