@@ -96,14 +96,18 @@
                 </thead>
                 <tbody>
                     <?php
+                    $query = mysqli_query($connect, "SELECT * FROM bantuan");
+                    if (mysqli_num_rows($query) > 0) {
                         $i = 0;
-                        $query = mysqli_query($connect, "SELECT * FROM bantuan");
+                        
                         $data = mysqli_fetch_array($query);
                         $id_bantuan = $data['id_bantuan'];
-                        foreach ($query as $data) :
-                            $i++;
+                        
+                        }
                     ?>
                     <tr>
+                        <?php foreach ($query as $data) :
+                            $i++; ?>
                         <td><?= $data['id_bantuan'] ?></td>
                         <td><?= $data['pertanyaan'] ?></td>
                         <td> 
