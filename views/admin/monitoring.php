@@ -6,7 +6,7 @@
 <main role="main">
         <div class="container">
         <h4 class="mt-5">DAFTAR CALON SISWA </h4>
-        <div class="table-responsive">
+        <div class="table-responsive-xl">
             <table class="table mt-4">
                 <thead class="table-primary">
                     <tr>
