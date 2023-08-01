@@ -23,7 +23,7 @@
                                Lakukan Monitoring dan Proses Seleksi Calon Santri Melalui Portal Ini
                             </div>
                             <div class="d-block text-center mt-auto"><br>
-                                <a class="btn btn-sm btn-primary px-3" href="?pendaftaranawal">Monitoring</a>
+                                <a class="btn btn-sm btn-primary px-3" href="?monitoring">Monitoring</a>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                                Lakukan Monitoring dan Jawab Pertanyaan Dari Calon Santri Dari Portal Ini
                             </div>
                             <div class="d-block text-center mt-auto"><br>
-                                <a class="btn btn-sm btn-primary px-3" href="?pendaftaranawal">Jawab Pertanyaan</a>
+                                <a class="btn btn-sm btn-primary px-3" href="?pengaturan">Jawab Pertanyaan</a>
                             </div>
                         </div>
                     </div>
