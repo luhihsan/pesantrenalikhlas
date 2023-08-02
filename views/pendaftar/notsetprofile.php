@@ -15,7 +15,7 @@
         <div class="col">
             <table class="table">
                 <tr>
-                    <td>Nama lengkapss</td>
+                    <td>Nama lengkap</td>
                     <td>:</td>
                     <td><?php echo isset($data_status['nama']) ? $data_status['nama'] : 'N/A'; ?></td>
                 </tr>
@@ -32,6 +32,8 @@
                     <?php 
                        echo "<div class='alert alert-warning' role='alert'>Status : Daftarkan diri anda!</div>";
                        
+                       
+                    if ($data3awal && isset($data3awal['status'])) {
                         if ($data_status['status'] == '1') {
                             echo "<span class='badge badge-success'>Selamat Anda Diterima Sebagai Calon Santri</span>";
                             echo "<br>";
@@ -42,7 +44,7 @@
                         } else {
                             echo "<div class='alert alert-warning' role='alert'>Status : Sedang Dalam Proses Penilaian Panitia</div>";
                         }   
-                    
+                    }
                        
                     ?>
                     </td>

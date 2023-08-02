@@ -234,7 +234,7 @@
                 </div>
                 <div class="col text-center">
                     <h4>ADDRESS</h4>
-                    <p> Bulu, Jogotirto, Kec. Berbah, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55573</p>
+                    <a href="https://goo.gl/maps/ZKVn3DQBXtZuk9Sq7" class="text-light" target="_blank">Bulu, Jogotirto, Kec. Berbah, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55573</a>
                 </div>
                 <div class="col text-center">
                     <h4>NAVIGATE</h4>
