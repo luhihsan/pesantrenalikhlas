@@ -153,8 +153,8 @@
                     <h4>NAVIGATE</h4>
                     <ul class="list-unstyled">
                         <li><a href="?beranda" class="text-light">Beranda</a></li>
-                        <li><a href="?monitoring" class="text-light">monitoring</a></li>
-                        <li><a href="?pengaturan" class="text-light">pengaturan</a></li>
+                        <li><a href="?monitoring" class="text-light">Monitoring</a></li>
+                        <li><a href="?pengaturan" class="text-light">Bantuan</a></li>
                     </ul>
                 </div>
             </div>
