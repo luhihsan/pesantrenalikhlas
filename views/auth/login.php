@@ -57,7 +57,7 @@
 
 <body class="bglogin">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <!-- Hapus class "col-md-6 offset-md-3" dari div ini -->
             <div class="center">
                 <h2 class="text-center mb-3">LOGIN</h2><br>
