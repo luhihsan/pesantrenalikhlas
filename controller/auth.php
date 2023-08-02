@@ -20,7 +20,7 @@ if (isset($_POST['login'])) {
             $_SESSION['nama'] = $cekemail['nama'];
             $_SESSION['login'] = 'true';
             
-            if ($cekemail['id_level'] == 1) {
+            if ($cekemail['id_level'] == 1 || 3) {
                 echo "<script>alert('Silahkan login dengan email user!'); document.location.href = '../views/auth/?login';</script>";
             } else {
                 echo "<script>alert('Berhasil login!'); document.location.href = '../views/pendaftar';</script>";
