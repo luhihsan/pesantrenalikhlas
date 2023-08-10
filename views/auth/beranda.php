@@ -134,29 +134,32 @@
 
         <hr>
 
-        <div class="text-center md-10">
-            
-  <div class="probootstrap-text probootstrap-animate">
-              <h3>Tentang Pondok Pesantren</h3>
-              <p class="ml-5 mr-5 text-justify ">Pondok Pesantren Al-Ikhlas Jogja merupakan lembaga pendidikan Islam yang bertujuan untuk memberikan pendidikan dan pembinaan kepada para santri dalam hal pengetahuan agama, akhlak, serta keterampilan hidup. Dengan mengutamakan nilai-nilai keagamaan, pesantren ini berkomitmen untuk mencetak generasi muda yang berkualitas, berakhlak mulia, dan memiliki wawasan lingkungan.
+        <div class="container p-3 ">
+        <div class="row justify-content-center">
 
-Pondok Pesantren Al-Ikhlas Jogja menyediakan berbagai program pendidikan seperti tahfizul Quran, studi agama Islam, ilmu bahasa Arab, studi Al-Quran dan Hadis, ilmu fiqih dan ushul fiqih, tafsir dan ulumul Quran, serta aqidah dan akhlak. Melalui pembelajaran yang berbasis sains dan teknologi, pesantren ini berusaha memberikan pendidikan yang relevan dengan perkembangan zaman.
-
-Dengan visi terwujudnya sekolah berkualitas, berkarakter, dan berwawasan lingkungan, serta misi menyiapkan sarana prasarana dan SDM yang memenuhi standar SNP, Pondok Pesantren Al-Ikhlas Jogja berupaya memberikan pengalaman pendidikan yang holistik dan terpadu kepada para santri. </p>
-              
+            <div class="col-md-10 text-center">
+                <h3 class="ml-3 mr-3">Tentang Pondok Pesantren</h3>
+                <p class="ml-4 mr-4 text-justify ">Pondok Pesantren Al-Ikhlas Jogja merupakan lembaga pendidikan Islam yang bertujuan untuk memberikan pendidikan dan pembinaan kepada para santri dalam hal pengetahuan agama, akhlak, serta keterampilan hidup. Dengan mengutamakan nilai-nilai keagamaan, pesantren ini berkomitmen untuk mencetak generasi muda yang berkualitas, berakhlak mulia, dan memiliki wawasan lingkungan.</p>  
             </div>
-  
-    <div class="probootstrap-image probootstrap-animate" style="background-image: url({{ url('frontend/enlight-master/img/slider_3.jpg') }})"></div>
-    
-    <div class="img-fluid" alt="Responsive image">
-        <div class="embed-responsive embed-responsive-16by9 ">
-            <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/MC03etv-rYQ" allowfullscreen></iframe>
+            
         </div>
-    </div>
-    
+            
 
-  </div>
-</div>
+    </div>
+<hr>
+<div class="container p-3 ">
+        <div class="row justify-content-center">
+
+            <div class="col-md-8 img-fluid" alt="Responsive image">
+                <div class="embed-responsive embed-responsive-16by9 ">
+                    <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/MC03etv-rYQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+        </div>
+            
+
+    </div>
 
 
         </div> <!-- /container -->
