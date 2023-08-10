@@ -20,9 +20,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pendaftaran siswa baru</title>
-    <link rel="icon" type="image/png" href="../../assets/img/logo.png">
+   
+    <link rel="icon" type="image/png" href="../../logo.png">
     <link rel="stylesheet" href="../../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../../assets/css/all.css">
+
     <style>
         .jumbotron {
             background-color: #f6f8fc;
