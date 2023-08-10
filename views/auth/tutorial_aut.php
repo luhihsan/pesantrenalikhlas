@@ -92,22 +92,32 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../auth">Beranda</a>
+                    <li class="nav-item ">
+                        <a class="nav-link ml-3" href="?beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link ml-3" href="tutorial_aut.php">Tutorial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Tutorial</a>
+                        <div class="dropdown">
+                            <a class="btn btn-white" href="../auth/?register">Buat Akun</a>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn-white dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" data-toggle="dropdown">Login</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="../auth/?login"><i class="fa fa-user mr-2"></i>Login</a>
+                                <a class="dropdown-item" href="../auth/?login-admin"><i class="fa fa-user mr-2"></i>Login As Admin</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <hr class="mx-2 m-0" style="height:20px; border: 1px solid rgba(0, 0, 0, 0.2)">
-            <div class="dropdown">
-            <a class="btn btn-white" href="../auth/?register">Buat Akun</a>
-                <a class="btn btn-white dropdown-toggle" href="" role="button" data-toggle="dropdown">Login</a>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="../auth/?login"><i class="fa fa-user mr-2"></i>Login</a>
-                    <a class="dropdown-item" href="../auth/?login-admin"><i class="fa fa-user mr-2"></i>Login As Admin</a>
-                </div>
-            </div>
+            <!-- <hr class="mx-2 m-0" style="height:20px; border: 1px solid rgba(0, 0, 0, 0.2)"> -->
+            
         </div>
     </nav>
     <!-- END NAVBAR -->
@@ -168,9 +178,9 @@
             <p class="ps-5 my-2">Membuat Akun:</p>
             <div class="create-account ps-5">
                 <p class="mb-1">Setelah masuk ke halaman awal web. User akan melakukan pendaftaran dengan memilih menu membuat akun disamping "Login"</p>
-                <img src= "../../assets/img/awal_reg.png" class="mb-1">
+                <img src= "../../assets/img/awal_reg.png" class="img-fluid" alt="Responsive image">
                 <p class="mb-1">Setelah masuk ke halaman buat akun, user akan diminta mengisikan data yang diperlukan untuk membuat akun.</p>
-                <img src= "../../assets/img/tutor_reg.png" class="mb-1">
+                <img src= "../../assets/img/tutor_reg.png" class="img-fluid" alt="Responsive image">
                 <p class="mb-1">Setelah mengisikan data yang diperlukan, user dapat klik tombol registrasi.</p>
                 <p class="mb-1">Jika registrasi sukses maka akan muncul notifikasi "Registrasi Sukses" dan secara otomatis akan kembali ke halaman login</p>
             </div>
@@ -178,18 +188,18 @@
                 <a href="#login">Login</a>
             </h5>
             <p class="ps-5">User memasukan data email dan password sesuai dengan yang di registrasikan</p>
-            <img src= "../../assets/img/login.png" class="mb-1">
+            <img src= "../../assets/img/login.png" class="img-fluid" alt="Responsive image">
             <p class="ps-5">Jika login sukses maka akan muncul notifikasi "Login Sukses" dan user akan secara otomatis masuk ke halaman utama</p>
 
             <h5 id="pendaftaran">
                 <a href="#Pendaftaran">Pendaftaran Calon Santri</a>
             </h5>
             <p class="ps-5">Setelah berhasil login maka user akan berada pada halaman utama pendaftaran. Selanjutnya user akan memilih menu pendaftaran yang ada di sebelah kiri.</p>
-            <img src= "../../assets/img/step1.png" class="mb-1">
+            <img src= "../../assets/img/step1.png" class="img-fluid" alt="Responsive image"">
             <p class="ps-5">User akan masuk ke halaman pendaftaran untuk mengisikan data yang diperlukan untuk mendaftar sebagai calon santri.</p>
-            <img src= "../../assets/img/form_daftar.png" class="mb-1">
+            <img src= "../../assets/img/form_daftar.png" class="img-fluid" alt="Responsive image">
             <p class="ps-5">Setelah selesai mengisikan data yang diperlukan, user melakukan pendaftaran dengan klik pada tombol "Daftar" yang ada dibawah halaman pendafataran.</p>
-            <img src= "../../assets/img/confirm_daftar.png" class="mb-1">
+            <img src= "../../assets/img/confirm_daftar.png" class="img-fluid" alt="Responsive image">
             <p class="ps-5">notifikasi "Sukses Mendaftar" akan muncul jika pendaftaran berhasil. User dapat kembali ke halaman awal dan menunggu konfirmasi penerimaan dari admin.</p>
 
 
@@ -198,9 +208,9 @@
             </h4>
             <p class="ps-4">Jika anda memerlukan bantuan terkait pendaftaran dan hal lainnya yang berhubungan dengan peneriamaan calon santri</p>
             <p class="ps-4">Anda dapat menguhubungi kami dengan mengisikan deskirpsi masalah anda pada menu bantuan yang tersedia di halaman utama</p>
-            <img src= "../../assets/img/menu_bantuan.png" class="mb-1">
+            <img src= "../../assets/img/menu_bantuan.png" class="img-fluid" alt="Responsive image">
             <p class="ps-4">Pada halaman ini anda dapat menuliskan deskripsi masalah yang dihadapi dan dapat melampirkan berkas atau foto sebagai bagian dari deskripsi masalah yang ada.</p>
-            <img src= "../../assets/img/form_bantuan.png" class="mb-1">
+            <img src= "../../assets/img/form_bantuan.png" class="img-fluid" alt="Responsive image">
             <p class="ps-4">Setelah mengisikan deskripsi masalah yang anda miliki. Klik tombol "Submit."</p>
             <p class="ps-4">Selanjutnya tunggulah admin kami untuk membantu menjawab masalah yang anda hadapi.</p>
 

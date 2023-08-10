@@ -1,4 +1,7 @@
-<!-- Main jumbotron for a primary marketing message or call to action -->
+
+
+       
+        <body>
         <div class="jumbotron">
             <div class="container text-center">
             <h1 style="color:white" class="display-3">SUPER ADMIN PAGE <br></h1>
@@ -6,85 +9,88 @@
             </div>
         </div>
 
-       
+    <div class="container p-3 ">
+        <div class="row justify-content-center">
 
-        <hr>
-
-        <div class="text-center md-10">
-  <div class="probootstrap-text probootstrap-animate">
-              <h3>Tentang Pondok Pesantren</h3>
-              <p>Pondok Pesantren Al-Ikhlas Jogja merupakan lembaga pendidikan Islam yang bertujuan untuk memberikan pendidikan dan pembinaan kepada para santri dalam hal pengetahuan agama, akhlak, serta keterampilan hidup. Dengan mengutamakan nilai-nilai keagamaan, pesantren ini berkomitmen untuk mencetak generasi muda yang berkualitas, berakhlak mulia, dan memiliki wawasan lingkungan.
-
-Pondok Pesantren Al-Ikhlas Jogja menyediakan berbagai program pendidikan seperti tahfizul Quran, studi agama Islam, ilmu bahasa Arab, studi Al-Quran dan Hadis, ilmu fiqih dan ushul fiqih, tafsir dan ulumul Quran, serta aqidah dan akhlak. Melalui pembelajaran yang berbasis sains dan teknologi, pesantren ini berusaha memberikan pendidikan yang relevan dengan perkembangan zaman.
-
-Dengan visi terwujudnya sekolah berkualitas, berkarakter, dan berwawasan lingkungan, serta misi menyiapkan sarana prasarana dan SDM yang memenuhi standar SNP, Pondok Pesantren Al-Ikhlas Jogja berupaya memberikan pengalaman pendidikan yang holistik dan terpadu kepada para santri. </p>
-              
+            <div class="col-md-10 text-center">
+                <h3 class="ml-3 mr-3">Tentang Pondok Pesantren</h3>
+                <p class="ml-4 mr-4 text-justify ">Pondok Pesantren Al-Ikhlas Jogja merupakan lembaga pendidikan Islam yang bertujuan untuk memberikan pendidikan dan pembinaan kepada para santri dalam hal pengetahuan agama, akhlak, serta keterampilan hidup. Dengan mengutamakan nilai-nilai keagamaan, pesantren ini berkomitmen untuk mencetak generasi muda yang berkualitas, berakhlak mulia, dan memiliki wawasan lingkungan.</p>  
             </div>
-  
-    <div class="probootstrap-image probootstrap-animate" style="background-image: url({{ url('frontend/enlight-master/img/slider_3.jpg') }})"></div>
-    <iframe  width="660" height="415" src="https://www.youtube.com/embed/MC03etv-rYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" class="btn-video popup-vimeo"></iframe>
-  </div>
-</div>
+            
+        </div>
+            
 
+    </div>
+<hr>
+<div class="container p-3 ">
+        <div class="row justify-content-center">
 
-        </div> <!-- /container -->
+            <div class="col-md-8 img-fluid" alt="Responsive image">
+                <div class="embed-responsive embed-responsive-16by9 ">
+                    <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/MC03etv-rYQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+        </div>
+            
 
-        <hr>
+    </div>
 
+            
         <div class="container p-3">
-    <h2 class="text-center">Program Pesantren</h2>
-    <div class="row">
-        <div class="col text-right">
-            <h5>Tahfizul Quran</h5>
-            <h5>Studi Agama Islam</h5>
-            <h5>Ilmu Bahasa Arab</h5>
+            <h2 class="text-center">Program Pesantren</h2>
+            <div class="row justify-content-center">
+                <div class="col text-right">
+                    <h5>Tahfizul Quran</h5>
+                    <h5>Studi Agama Islam</h5>
+                    <h5>Ilmu Bahasa Arab</h5>
+                </div>
+                <div class="col-1 text-center">
+                    <h5>o</h5>
+                    <h5>o</h5>
+                    <h5>o</h5>
+                    <h5>o</h5>
+                </div>
+                <div class="col">
+                    <h5>Studi Al-Quran dan Hadis</h5>
+                    <h5>Ilmu Fiqih dan Ushul Fiqih</h5>
+                    <h5>Tafsir dan Ulumul Quran</h5>
+                    <h5>Aqidah dan Akhlak</h5>
+                </div>
+            </div>
         </div>
-        <div class="col-1 text-center">
-            <h5>o</h5>
-            <h5>o</h5>
-            <h5>o</h5>
-            <h5>o</h5>
+
+<hr>
+
+<div class="container p-3">
+    <h4 class="text-center">Galeri Pesantren</h4>
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <img src="../../assets/img/Pengasuhpesantren.jpg" class="img-fluid" alt="Responsive image" >
+            <br>
+            <img src="../../assets/img/halamandepanpesantren.jpg" class="img-fluid" alt="Responsive image" >
+            <br>
+            <img src="../../assets/img/santridipesantren.jpg" class="img-fluid" alt="Responsive image" >
         </div>
-        <div class="col">
-            <h5>Studi Al-Quran dan Hadis</h5>
-            <h5>Ilmu Fiqih dan Ushul Fiqih</h5>
-            <h5>Tafsir dan Ulumul Quran</h5>
-            <h5>Aqidah dan Akhlak</h5>
+        <div class="col-md-4">
+            <div class="card shadow m-2">
+                <div class="card-body">
+                    <h6>Kegiatan rutin baca Al-Quran di pesantren Al-ikhlas</h6>
+                </div>
+            </div>
+            <div class="card shadow m-2">
+                <div class="card-body">
+                    <h6>Tahfidz quran pesantren Al-ikhlas</h6>
+                </div>
+            </div>
+            <div class="card shadow m-2">
+                <div class="card-body">
+                    <h6>Pelaksanaan uji kompetensi keahllian tahun ajaran 2023/2024</h6>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-
-        <hr>
-
-        <div class="container p-3">
-            <div class="row">
-            <div class="col-8">
-                    <h4>Galeri Pesantren</h4>
-                    <img src="../../assets/img/Pengasuhpesantren.jpg" alt="" width="500">
-                    <img src="../../assets/img/halamandepanpesantren.jpg" alt="" width="500">
-                    <img src="../../assets/img/santridipesantren.jpg" alt="" width="500">
-                </div>
-                <div class="col-4">
-                    <div class="card shadow m-2">
-                        <div class="card-body">
-                        <h6>Kegiatan rutin baca Al-Quran di pesantren Al-ikhlas</h6>
-                        </div>
-                    </div>
-                    <div class="card shadow m-2">
-                        <div class="card-body">
-                        <h6>Tahfidz quran pesantren Al-ikhlas</h6>
-                        </div>
-                    </div>
-                    <div class="card shadow m-2">
-                        <div class="card-body">
-                        <h6>Pelaksanaan uji kompetensi keahllian tahun ajaran 2023/2024</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 <?php
         include "../../controller/connect.php";
         $query = mysqli_query($connect, "SELECT * FROM countdown");

@@ -91,23 +91,32 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="?beranda">Beranda</a>
+                    <li class="nav-item ">
+                        <a class="nav-link ml-3" href="?beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link ml-3" href="tutorial_aut.php">Tutorial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tutorial_aut.php">Tutorial</a>
+                        <div class="dropdown">
+                            <a class="btn btn-white" href="../auth/?register">Buat Akun</a>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="btn btn-white dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" data-toggle="dropdown">Login</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="../auth/?login"><i class="fa fa-user mr-2"></i>Login</a>
+                                <a class="dropdown-item" href="../auth/?login-admin"><i class="fa fa-user mr-2"></i>Login As Admin</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
-            <hr class="mx-2 m-0" style="height:20px; border: 1px solid rgba(0, 0, 0, 0.2)">
-            <div class="dropdown">
-            <a class="btn btn-white" href="../auth/?register">Buat Akun</a>
-                <a class="btn btn-white dropdown-toggle" href="" role="button" data-toggle="dropdown">Login</a>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="../auth/?login"><i class="fa fa-user mr-2"></i>Login</a>
-                    <a class="dropdown-item" href="../auth/?login-admin"><i class="fa fa-user mr-2"></i>Login As Admin</a>
-                </div>
-            </div>
+            <!-- <hr class="mx-2 m-0" style="height:20px; border: 1px solid rgba(0, 0, 0, 0.2)"> -->
+            
         </div>
     </nav>
     <!-- END NAVBAR -->

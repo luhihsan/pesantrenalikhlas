@@ -36,12 +36,9 @@
 </head>
 
 <body class="bglogin">
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br>
-    <div class="col-3 center">
-        <h4 class="text-center mb-3">LOGIN SEBAGAI ADMIN</h4>
+<div class="col-md-4 mx-auto">
+    <br>
+    <h4 class="text-center mb-3">LOGIN SEBAGAI ADMIN</h4>
         <form action="../../controller/auth-admin.php" method="POST">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -63,8 +60,7 @@
             <a href="dashboardawal.php" class="btn btn-success btn-block mb-3" style="margin-bottom: 10px;">Back to dashboard</a><br>
              </div>
         </form>
-    </div>
-
+</div>
     <script src="../../assets/js/jquery.js"></script>
     <script src="../../assets/js/bootstrap.js"></script>
 </body>

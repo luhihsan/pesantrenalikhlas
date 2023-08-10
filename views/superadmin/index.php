@@ -75,6 +75,7 @@
 <body>
 
     <!-- START NAVBAR -->
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 shadow" style="width:100%">
         <div class="container">
         <a class="navbar-brand" href="https://www.instagram.com/alberderryy/">
@@ -87,24 +88,24 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                <li class="nav-item">
                         <a class="nav-link" href="?beranda">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?monitoring">Daftar Calon Admin</a>
-                    <!-- </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="?pengaturan">pengaturan</a>
-                    </li> -->
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            
+                            <a class="btn btn-white dropdown-toggle" href="" role="button" data-toggle="dropdown"><?= $_SESSION['nama'] ?></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="../../views/auth/"><i class="fa fa-sign-out-alt mr-2"></i>Keluar</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <hr class="mx-2 m-0" style="height:20px; border: 1px solid rgba(0, 0, 0, 0.2)">
-            <div class="dropdown">
-                <a class="btn btn-white dropdown-toggle" href="" role="button" data-toggle="dropdown"><?= $_SESSION['nama'] ?></a>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="../../views/auth/"><i class="fa fa-sign-out-alt mr-2"></i>Keluar</a>
-                </div>
-            </div>
+            
         </div>
     </nav>
     <!-- END NAVBAR -->

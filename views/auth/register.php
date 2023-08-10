@@ -24,38 +24,35 @@
             border-radius:20px;
         }
     </style>
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/bootstrap.js"></script>
 </head>
 
 <body class="bglogin">
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br>
-    <div class="col-3 center">
-       <br><br><br> <h4 class="text-center mb-3">REGISTRASI</h4><br>
-        <form action="../../controller/auth.php" method="POST">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="masukkan nama" name="nama"
-                    aria-label="nama" aria-describedby="basic-addon1" required="true">
-            </div>
-            <div class="input-group mb-3">
-                <input type="email" class="form-control" placeholder="masukkan email" name="email"
-                    aria-label="email" aria-describedby="basic-addon1" required="true">
-            </div>
-            <div class="input-group mb-3">
-                <input type="password" class="form-control" placeholder="masukkan password" name="password"
-                    aria-label="Username" aria-describedby="basic-addon1" required="true">
-            </div>
-                <button type="submit" name="register" class="btn btn-primary btn-block mb-3">REGISTRASI</button>
-            
-            <div class="text-center justify-content-center">
-            <a href="?login" class="btn btn-link btn-block mb-3" style="margin-bottom: 10px;">Login dengan akun yang sudah ada</a><br>
-             </div>
-        </form>
-    </div>
 
-    <script src="../../assets/js/jquery.js"></script>
-    <script src="../../assets/js/bootstrap.js"></script>
+<div class="col-md-3 mx-auto">
+    <br>
+    <h4 class="text-center mb-3">REGISTRASI</h4><br>
+    <form action="../../controller/auth.php" method="POST">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Masukkan Nama" name="nama" required>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Masukkan Email" name="email" required>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Masukkan Password" name="password" required>
+        </div>
+        <button type="submit" name="register" class="btn btn-primary btn-block mb-3">REGISTRASI</button>
+        
+        <div class="text-center">
+            <a href="?login" class="btn btn-link btn-block mb-3">Login dengan akun yang sudah ada</a>
+        </div>
+    </form>
+</div>
+
+
+    
 </body>
 
 </html>
